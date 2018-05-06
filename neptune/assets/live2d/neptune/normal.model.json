@@ -1,0 +1,60 @@
+{
+  "type": "Live2D Model Setting",
+  "name": "ネプテューヌ - ジャージワンピ",
+  "model": "normal.moc",
+  "textures": [
+    "tx1024/0.png",
+    "tx1024/1.png",
+    "tx1024/normal_2.png"
+  ],
+  "pose": "./general/pose.json",
+  "physics": "physics.json",
+  "layout": {
+    "center_x" : 0,
+    "center_y" : -0.1,
+    "width": 2
+  },
+  "hit_areas": [
+    {"name": "head", "id": "D_REF.PT_HEAD"},
+    {"name": "body", "id": "D_REF.PT_BUST"},
+    {"name": "belly", "id": "D_REF.PT_BELL"}
+  ],
+  "expressions": [
+    {"name": "normal", "file": "exp/normal.json"},
+    {"name": "happy", "file": "exp/happy.json"},
+    {"name": "unhappy", "file": "exp/unhappy.json"},
+    {"name": "kira", "file": "exp/kira.json"},
+    {"name": "deformed", "file": "exp/deformed.json"},
+    {"name": "enjoy", "file": "exp/enjoy.json"}
+  ],
+  "motions": {
+    "idle": [
+      {"file": "mtn/idle_00.mtn", "fade_in": 2000, "fade_out": 2000},
+      {"file": "mtn/idle_01.mtn", "fade_in": 2000, "fade_out": 2000},
+      {"file": "mtn/idle_02.mtn", "fade_in": 2000, "fade_out": 2000}
+    ],
+    "alt_idle": [
+      {"file": "./general/mtn/idle_00.mtn", "fade_in": 2000, "fade_out": 2000},
+      {"file": "./general/mtn/idle_01.mtn", "fade_in": 2000, "fade_out": 2000},
+      {"file": "./general/mtn/idle_02.mtn", "fade_in": 2000, "fade_out": 2000},
+      {"file": "mtn/shake.mtn"}
+    ],
+    "tap_body": [
+      {"dialogue": 11, "sound": "snd/001.ogg", "file": "mtn/nep_touch_head_1.mtn"},
+      {"dialogue": 13, "sound": "snd/013.ogg", "file": "mtn/nep_touch_belly_1.mtn"},
+      {"dialogue": 90, "sound": "snd/101.ogg", "file": "mtn/nep_slide_head_2.mtn"},
+      {"dialogue": 93, "sound": "snd/007.ogg", "file": "mtn/nep_touch_boobs_1.mtn"},
+      {"dialogue": 94, "sound": "snd/014.ogg", "file": "mtn/nep_touch_belly_2.mtn"},
+      {"file": "mtn/refuse.mtn"},
+      {"file": "mtn/tilt_head.mtn"}
+    ],
+    "pinch_out": [
+    ],
+    "pinch_in": [
+    ],
+    "shake": [
+    ],
+    "flick_head": [
+    ]
+  }
+}

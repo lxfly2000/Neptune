@@ -1,0 +1,258 @@
+{
+	"description" : "[b]A Neptune Live2D wallpaper, including user interactions and web effect(s).[/b]\n[b]一个Neptune的Live2D壁纸，包括用户互动和若干网页特效[/b]\n(如果你看到这些文字，请切换你的语言到简体中文以查看中文描述)\n\nSupports any resolutions from 800*600 to 4k.\n\nThe Live2D model is from Compile Heart's official app, I don't know if taking it will get me into any trouble... For now I just keep it till someday I'm asked to remove it.\nThe preset background is a screenshot from RB1 because currently this is the only one I've played in Neptunia series.\n\nThis project is based on Live2D's WebGL SDK. And what I have to say is, though Live2D is a perfect project, its SDK is such a mess. Forgetting the inefficient snippets, it has totally no ANY comments or docs, reading it almost got me crazy. It's like, \"Use it if you can, NOOOOOOB\"\nHonestly I did find one comment in one of those files, in Japanese, well.\n\nPlease don't scale up too much, or the model may be clipped :/ (trying to fix)\n\n[h1][b]Web Effect:[/b][/h1]\n[list]\n[*]Falling leaves\n[/list]\n\n[h1][b]Features:[/b][/h1]\n[list]\n[*]Cursor following\n[*]Scaling and moving character\n[*]Clicking face can change expressions\n[*]Changing background by local file or remote URL\n[*]Showing dialogue if exists\n[*]Adjusting volume\n[/list]\n\n[h1][b]Planned Features:[/b][/h1]\n[list]\n[*]More web effects\n[*]Adjusting FPS limit\n[*]More event motions (clicking, focusing, time-correlated, etc.)\n[/list]",
+	"file" : "index.html",
+	"general" : 
+	{
+		"localization" : 
+		{
+			"en-us" : 
+			{
+				"ui__custom" : "Customization",
+				"ui__general" : "General",
+				"ui__help" : "Help",
+				"ui__leaves" : "Leaves",
+				"ui__others" : "Others",
+				"ui_alt_idle" : "Alternative Idle Motions",
+				"ui_bg_img" : "Background Image",
+				"ui_bg_url" : "Background URL",
+				"ui_custom_model" : "Custom Model",
+				"ui_free_following" : "Free Following",
+				"ui_help" : "<font color='RoyalBlue'>For features and changelog please check the workshop page.</font><br><br><b>Show Dialog</b><br>Show dialogue with dialog (hard to tell words apart...) if the running motion has it.<br><br><b>Free Following</b><br>Character will follow your cursor anytime, without mouse pressing, but only available in current monitor. Single clickanywhere to temporarily release following.<br><br><b>Alternative Idle Motions</b><br>Use the idle motions based on Live2D official model Haru's. Actually some of the other motions are also hers :/<br><br><b>Background URL</b><br>Set online image as background by URL like http://...<br><br><b>Offset X/Y</b><br>Offset character in pixels, any numeric value is ok.<br><br><b>Custom Model</b><br>Please wait for my guide...<br><br><b>Self-falls</b><br>Disabling it can reduce CPU usage.<br><br><b>Falling Interval</b><br>Set max of the falling interval, which will be randomly 0-max. The unit is 100ms.<br><font color='OrangeRed'>Small interval reduces performance, please check your task manager for CPU/GPU usage.</font><br><br><b>Log</b><br>Show debugging messages and errors.",
+				"ui_leaves_interval" : "Falling interval",
+				"ui_leaves_num" : "Leaves Number",
+				"ui_leaves_self_falls" : "Self-falls",
+				"ui_log" : "Log",
+				"ui_model_file" : "Model File",
+				"ui_offset_x" : "Offset X",
+				"ui_offset_y" : "Offset Y",
+				"ui_page" : "<font color='#AAA'><b>Page</b></font>",
+				"ui_scale" : "Scale",
+				"ui_show_dialog" : "Show Dialog",
+				"ui_show_leaves" : "Enable",
+				"ui_volume" : "Volume"
+			},
+			"zh-chs" : 
+			{
+				"ui_alt_idle" : "替换空闲时动作",
+				"ui_bg_img" : "背景图片",
+				"ui_bg_url" : "背景URL",
+				"ui_custom_model" : "自定义模型",
+				"ui_free_following" : "自由跟随",
+				"ui_help" : "<font color='RoyalBlue'>上面的下拉列表依然不能显示翻译……<br>关于功能和更新日志请查看创意工坊页面。</font><br><br><b>显示对话</b><br>显示正在执行动作的对话，如果存在的话。<br><br><b>自由跟随</b><br>人物会随时跟随你的指针，不需要按下鼠标，仅在当前显示器有效。单击任意处以暂时释放跟随。<br><br><b>替换空闲时动作</b><br>使用替换的空闲时动作，这些动作基于Live2D的官方模型Haru。实际上其它的一些动作也是她的- -<br><br><b>背景URL</b><br>使用URL来设置在线壁纸，比如 http://...<br><br><b>偏移X/Y</b><br>偏移人物，以像素为单位，任何数字都可以。<br><br><b>自定义模型</b><br>请等待我写的指南...<br><br><b>自动掉落</b><br>树叶是否会自动掉落，关闭可以节省cpu占用率。<br><br><b>掉落间隔</b><br>设置掉落间隔的最大值，计算时会取0到最大值的随机值，单位是100毫秒。<br><font color='OrangeRed'>过小的间隔会降低性能，请用任务管理器来查看CPU/GPU占用率。</font><br><br><b>日志</b><br>显示调试信息和错误。",
+				"ui_leaves_interval" : "掉落间隔",
+				"ui_leaves_num" : "树叶数量",
+				"ui_leaves_self_falls" : "自动掉落",
+				"ui_log" : "日志",
+				"ui_model_file" : "模型文件",
+				"ui_offset_x" : "偏移X",
+				"ui_offset_y" : "偏移Y",
+				"ui_page" : "<font color='#AAA'><b>页面</b></font>",
+				"ui_scale" : "缩放",
+				"ui_show_dialog" : "显示对话",
+				"ui_show_leaves" : "启用树叶",
+				"ui_volume" : "音量"
+			}
+		},
+		"properties" : 
+		{
+			"altidle" : 
+			{
+				"condition" : "page.value===1&&!custommodel.value",
+				"order" : 1,
+				"text" : "ui_alt_idle",
+				"type" : "bool",
+				"value" : false
+			},
+			"bgimg" : 
+			{
+				"condition" : "page.value===1",
+				"order" : 2,
+				"text" : "ui_bg_img",
+				"type" : "file"
+			},
+			"bgurl" : 
+			{
+				"condition" : "page.value===1",
+				"order" : 3,
+				"text" : "ui_bg_url",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"custommodel" : 
+			{
+				"condition" : "page.value===1",
+				"order" : 7,
+				"text" : "ui_custom_model",
+				"type" : "bool",
+				"value" : false
+			},
+			"custommodelfile" : 
+			{
+				"condition" : "page.value===1&&custommodel.value",
+				"order" : 8,
+				"text" : "ui_model_file",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"fps" : 
+			{
+				"condition" : "page.value===8",
+				"order" : 1,
+				"text" : "FPS",
+				"type" : "bool",
+				"value" : false
+			},
+			"freefollowing" : 
+			{
+				"condition" : "page.value===0",
+				"order" : 4,
+				"text" : "ui_free_following",
+				"type" : "bool",
+				"value" : false
+			},
+			"help" : 
+			{
+				"condition" : "page.value===9",
+				"order" : 1,
+				"text" : "ui_help"
+			},
+			"leavesinterval" : 
+			{
+				"condition" : "page.value===2&&leavesselffalls.value",
+				"max" : 100,
+				"min" : 1,
+				"order" : 3,
+				"text" : "ui_leaves_interval",
+				"type" : "slider",
+				"value" : 20
+			},
+			"leavesnum" : 
+			{
+				"condition" : "page.value===2",
+				"max" : 100,
+				"min" : 10,
+				"order" : 2,
+				"text" : "ui_leaves_num",
+				"type" : "slider",
+				"value" : 30
+			},
+			"leavesselffalls" : 
+			{
+				"condition" : "page.value===2",
+				"order" : 3,
+				"text" : "ui_leaves_self_falls",
+				"type" : "bool",
+				"value" : true
+			},
+			"log" : 
+			{
+				"condition" : "page.value===8",
+				"order" : 2,
+				"text" : "ui_log",
+				"type" : "bool",
+				"value" : false
+			},
+			"logo" : 
+			{
+				"order" : -1,
+				"text" : "<img THE TRICK! width='100%' alt='未来ガジェット研究所' vspace='4px' src='../../../../workshop/content/431960/1078208425/neptune/assets/image/lab.png'/></a>"
+			},
+			"offsetx" : 
+			{
+				"condition" : "page.value===1",
+				"order" : 5,
+				"text" : "ui_offset_x",
+				"type" : "textinput",
+				"value" : "200"
+			},
+			"offsety" : 
+			{
+				"condition" : "page.value===1",
+				"order" : 6,
+				"text" : "ui_offset_y",
+				"type" : "textinput",
+				"value" : "0"
+			},
+			"page" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "ui__general",
+						"value" : 0
+					},
+					{
+						"label" : "ui__custom",
+						"value" : 1
+					},
+					{
+						"label" : "ui__leaves",
+						"value" : 2
+					},
+					{
+						"label" : "ui__others",
+						"value" : 8
+					},
+					{
+						"label" : "ui__help",
+						"value" : 9
+					}
+				],
+				"order" : 0,
+				"text" : "ui_page",
+				"type" : "combo",
+				"value" : 0
+			},
+			"scale" : 
+			{
+				"condition" : "page.value===1",
+				"max" : 200,
+				"min" : 0,
+				"order" : 4,
+				"text" : "ui_scale",
+				"type" : "slider",
+				"value" : 100
+			},
+			"schemecolor" : 
+			{
+				"condition" : "page.value===0",
+				"order" : 1,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.7333333333333333 0.5647058823529412 0.8666666666666667"
+			},
+			"showdialog" : 
+			{
+				"condition" : "page.value===0",
+				"order" : 3,
+				"text" : "ui_show_dialog",
+				"type" : "bool",
+				"value" : true
+			},
+			"showleaves" : 
+			{
+				"condition" : "page.value===2",
+				"order" : 1,
+				"text" : "ui_show_leaves",
+				"type" : "bool",
+				"value" : true
+			},
+			"volume" : 
+			{
+				"condition" : "page.value===0",
+				"max" : 10,
+				"min" : 0,
+				"order" : 2,
+				"text" : "ui_volume",
+				"type" : "slider",
+				"value" : 5
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Game" ],
+	"title" : "Neptune Live2D",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 1078208425
+}

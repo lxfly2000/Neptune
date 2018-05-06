@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neptune</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=1.0, maximum-scale=4.0">
+	<meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="neptune/src/css/styles.css">
+
+    <!-- Live2D Library -->
+    <script src="lib/live2d.min.js"></script>
+
+    <!-- Live2D Framework -->
+    <script src="framework/Live2DFramework.js"></script>
+
+    <!-- User's Script -->
+    <script src="neptune/src/utils/MatrixStack.js"></script>
+    <script src="neptune/src/utils/ModelSettingJson.js"></script>
+    <script src="neptune/src/PlatformManager.js"></script>
+    <script src="neptune/src/LAppDefine.js"></script>
+    <script src="neptune/src/LAppModel.js"></script>
+    <script src="neptune/src/LAppLive2DManager.js"></script>
+
+    <script src="neptune/src/libs/jquery-3.2.1.min.js"></script>
+    <script src="neptune/src/my-tools/Utils.js"></script>
+    <script src="neptune/src/my-tools/Background.js"></script>
+    <script src="neptune/src/my-tools/Model.js"></script>
+    <script src="neptune/src/my-tools/MyTools.js"></script>
+    <script src="neptune/src/my-tools/WEListener.js"></script>
+
+    <script src="neptune/src/Main.js"></script>
+</head>
+
+<body onload="start()">
+
+<div id="cover"></div>
+
+<canvas id="gl-canvas" width="680" height="940"></canvas>
+
+<button id="btnChange" class="active" style="display:none">Change Model</button>
+<!--<button id="btnChangeBg" class="active" style="left: 180px;display: inline">Change Model</button>-->
+
+<p id="dialog"></p>
+
+<p id="myconsole">---- Log ----</p>
+
+<p id="fps">fps</p>
+
+<!--自己加的一些东西，以后放在一个单独的文件内。-->
+<script>
+if (window.ActiveXObject || "ActiveXObject" in window){
+	alert("该页面可能无法在IE中正常显示，建议你换一个浏览器。");
+}
+function hm(m){
+document.getElementById("myconsole").innerText=m;
+}
+hm("Neptune Live2D 动态壁纸 From Wallpaper Engine\n\n最近开始玩起了Live2D...\n按F11切换全屏显示。");
+setTimeout("hm('')",10000);
+MyTools.setDialogEnabled(true);
+MyTools.setVolume(1);
+</script>
+</body>
+</html>
